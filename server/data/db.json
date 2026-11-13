@@ -1,0 +1,138 @@
+{
+  "listings": [
+    {
+      "id": "listing-1",
+      "category": "cars",
+      "title": "2022 Toyota Hilux",
+      "price": 255000,
+      "currency": "GHS",
+      "location": "Ghana",
+      "city": "Accra",
+      "brand": "Toyota",
+      "model": "Hilux",
+      "fuel": "Diesel",
+      "transmission": "Automatic",
+      "dealer": "Urban Fleet Motors",
+      "whatsapp": "+233200000000",
+      "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80",
+      "status": "approved"
+    },
+    {
+      "id": "listing-2",
+      "category": "cars",
+      "title": "2019 BMW X5",
+      "price": 320000,
+      "currency": "NGN",
+      "location": "Nigeria",
+      "city": "Lagos",
+      "brand": "BMW",
+      "model": "X5",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "dealer": "Naija Prestige Autos",
+      "whatsapp": "+2348000000000",
+      "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=900&q=80",
+      "status": "approved"
+    },
+    {
+      "id": "listing-3",
+      "category": "motorcycles",
+      "title": "2021 Royal Enfield Classic",
+      "price": 42000,
+      "currency": "GHS",
+      "location": "Ghana",
+      "city": "Kumasi",
+      "brand": "Royal Enfield",
+      "model": "Classic 350",
+      "fuel": "Petrol",
+      "transmission": "Manual",
+      "dealer": "Rider House Ghana",
+      "whatsapp": "+233240000000",
+      "image": "https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80",
+      "status": "approved"
+    },
+    {
+      "id": "listing-4",
+      "category": "trucks",
+      "title": "2020 Isuzu Forward",
+      "price": 470000,
+      "currency": "NGN",
+      "location": "Nigeria",
+      "city": "Port Harcourt",
+      "brand": "Isuzu",
+      "model": "Forward",
+      "fuel": "Diesel",
+      "transmission": "Manual",
+      "dealer": "Delta Freight Transport",
+      "whatsapp": "+2347000000000",
+      "image": "https://images.unsplash.com/photo-1605559424843-9e4c179363a3?auto=format&fit=crop&w=900&q=80",
+      "status": "approved"
+    }
+  ],
+  "submissions": [
+    {
+      "id": "submission-1",
+      "title": "2023 Mercedes-Benz Sprinter",
+      "dealerName": "Luxe Transit Ghana",
+      "category": "buses",
+      "location": "Ghana",
+      "city": "Accra",
+      "price": 620000,
+      "currency": "GHS",
+      "status": "pending",
+      "createdAt": "2026-11-13T10:00:00.000Z"
+    },
+    {
+      "id": "submission-2",
+      "title": "2019 Honda CR-V",
+      "dealerName": "Eko Auto Mart",
+      "category": "cars",
+      "location": "Nigeria",
+      "city": "Lagos",
+      "price": 185000,
+      "currency": "NGN",
+      "status": "pending",
+      "createdAt": "2026-11-13T11:00:00.000Z"
+    }
+  ],
+  "dealers": [
+    {
+      "id": "dealer-1",
+      "name": "Afro Auto Hub",
+      "location": "Accra, Ghana",
+      "category": "cars",
+      "phone": "+233200000000",
+      "status": "verified",
+      "rating": 4.9
+    },
+    {
+      "id": "dealer-2",
+      "name": "Naija Bulk Motors",
+      "location": "Lagos, Nigeria",
+      "category": "trucks",
+      "phone": "+2348000000000",
+      "status": "verified",
+      "rating": 4.8
+    },
+    {
+      "id": "dealer-3",
+      "name": "Rural Access Parts",
+      "location": "Kumasi, Ghana",
+      "category": "spare parts",
+      "phone": "+233240000000",
+      "status": "verified",
+      "rating": 4.7
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "sub-1",
+      "dealerName": "Afro Auto Hub",
+      "plan": "Featured Dealer",
+      "amount": 250,
+      "currency": "GHS",
+      "status": "active",
+      "startDate": "2026-11-01T00:00:00.000Z"
+    }
+  ]
+}
