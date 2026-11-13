@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MOTORHUB AFRICA is a premium automotive marketplace for Ghana and Nigeria, featuring cars, trucks, motorcycles, buses, tricycles, spare parts and heavy equipment."
+    />
+    <meta name="theme-color" content="#0c0c0d" />
+    <title>MOTORHUB AFRICA | Premium Automotive Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="container nav-wrap">
+          <div class="brand" aria-label="MOTORHUB AFRICA home">
+            <div class="brand-mark">MH</div>
+            <div>
+              <span class="brand-name">MOTORHUB AFRICA</span>
+              <small>Marketplace</small>
+            </div>
+          </div>
+
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="#marketplace">Marketplace</a>
+            <a href="#dealers">Dealers</a>
+            <a href="#submit-listing">Submit Listing</a>
+            <a href="#admin-panel">Admin</a>
+          </nav>
+
+          <button class="btn btn-primary nav-cta">List a Vehicle</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <div class="eyebrow">Ghana • Nigeria • Trusted Trade</div>
+              <h1>Find the right vehicle for your route, business, and budget.</h1>
+              <p>
+                MOTORHUB AFRICA connects buyers and sellers across Ghana and Nigeria with a premium marketplace for cars, motorcycles, trucks, buses, tricycles, spare parts and heavy equipment.
+              </p>
+
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#marketplace">Browse inventory</a>
+                <a class="btn btn-secondary" href="#submit-listing">Become a dealer</a>
+              </div>
+
+              <div class="stats-row" aria-label="Market stats">
+                <div>
+                  <strong>3.4k+</strong>
+                  <span>Demo listings</span>
+                </div>
+                <div>
+                  <strong>2 countries</strong>
+                  <span>Ghana & Nigeria</span>
+                </div>
+                <div>
+                  <strong>24/7</strong>
+                  <span>Dealer support</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-panel">
+              <div class="panel-card">
+                <div class="panel-header">
+                  <span>Premium marketplace</span>
+                  <span class="live-dot">Live</span>
+                </div>
+                <div class="feature-badges">
+                  <span>Cars</span>
+                  <span>Trucks</span>
+                  <span>Parts</span>
+                </div>
+                <div class="featured-vehicle">
+                  <div class="vehicle-visual"></div>
+                  <div class="vehicle-details">
+                    <p class="tag">Demo Listing</p>
+                    <h3>2022 Toyota Hilux</h3>
+                    <div class="meta-row">
+                      <span>4WD</span>
+                      <span>Automatic</span>
+                    </div>
+                    <div class="price-row">
+                      <strong>GHS 255,000</strong>
+                      <small>NGN 11.5M</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="category-strip">
+          <div class="container category-list" aria-label="Vehicle categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="cars">Cars</button>
+            <button class="category-btn" data-category="motorcycles">Motorcycles</button>
+            <button class="category-btn" data-category="trucks">Trucks</button>
+            <button class="category-btn" data-category="buses">Buses</button>
+            <button class="category-btn" data-category="tricycles">Tricycles</button>
+            <button class="category-btn" data-category="spare parts">Spare Parts</button>
+            <button class="category-btn" data-category="heavy equipment">Heavy Equipment</button>
+          </div>
+        </section>
+
+        <section id="marketplace" class="marketplace">
+          <div class="container market-grid">
+            <aside class="filter-panel" aria-label="Inventory filters">
+              <div class="filter-header">
+                <h2>Filters</h2>
+                <button class="link-btn reset-filters" type="button">Reset</button>
+              </div>
+
+              <label class="field">
+                <span>Search</span>
+                <input id="searchInput" type="search" placeholder="Model, brand, location..." />
+              </label>
+
+              <label class="field">
+                <span>Location</span>
+                <select id="locationFilter">
+                  <option value="all">All countries</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Nigeria">Nigeria</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span>Price range</span>
+                <select id="priceFilter">
+                  <option value="all">Any price</option>
+                  <option value="under-50k">Under GHS 50,000 / NGN 2.5M</option>
+                  <option value="50k-150k">GHS 50,000–150,000 / NGN 2.5M–7M</option>
+                  <option value="150k-300k">GHS 150,000–300,000 / NGN 7M–14M</option>
+                  <option value="300k-plus">GHS 300,000+ / NGN 14M+</option>
+                </select>
+              </label>
+
+              <div class="filter-card">
+                <h3>Popular searches</h3>
+                <div class="chip-group">
+                  <button class="mini-chip" type="button">SUV</button>
+                  <button class="mini-chip" type="button">Commercial</button>
+                  <button class="mini-chip" type="button">Used</button>
+                  <button class="mini-chip" type="button">Heavy duty</button>
+                </div>
+              </div>
+            </aside>
+
+            <div class="inventory-panel">
+              <div class="inventory-toolbar">
+                <div>
+                  <p class="muted-label">Inventory</p>
+                  <h2>Featured listings</h2>
+                </div>
+                <div class="summary-tag"><span id="resultCount">0</span> matches</div>
+              </div>
+
+              <div id="listingGrid" class="listing-grid" aria-live="polite"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-band">
+          <div class="container trust-grid">
+            <article>
+              <span class="trust-icon">✓</span>
+              <h3>Dealer verified</h3>
+              <p>Profiles and business metadata are reviewed before public listing.</p>
+            </article>
+            <article>
+              <span class="trust-icon">☎</span>
+              <h3>WhatsApp ready</h3>
+              <p>Buyers contact dealers instantly through direct messaging.</p>
+            </article>
+            <article>
+              <span class="trust-icon">₵</span>
+              <h3>GHS + NGN</h3>
+              <p>Display prices in local currencies for both Ghana and Nigeria.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="dealers" class="dealers-section">
+          <div class="container section-head">
+            <div>
+              <p class="muted-label">For dealers</p>
+              <h2>Built for trusted businesses</h2>
+            </div>
+          </div>
+
+          <div class="container dealer-grid">
+            <article class="dealer-card">
+              <div class="dealer-avatar gold">AA</div>
+              <div>
+                <h3>Afro Auto Hub</h3>
+                <p class="muted">Dealer • Accra, Ghana</p>
+              </div>
+              <p class="dealer-text">Premium SUVs, fleet vehicles and certified used cars for urban and commercial buyers.</p>
+              <a class="dealer-link" href="https://wa.me/233200000000" target="_blank" rel="noreferrer">WhatsApp</a>
+            </article>
+
+            <article class="dealer-card">
+              <div class="dealer-avatar">NB</div>
+              <div>
+                <h3>Naija Bulk Motors</h3>
+                <p class="muted">Dealer • Lagos, Nigeria</p>
+              </div>
+              <p class="dealer-text">Heavy-duty trucks, buses and logistics equipment for growing transport businesses.</p>
+              <a class="dealer-link" href="https://wa.me/2348000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+            </article>
+
+            <article class="dealer-card">
+              <div class="dealer-avatar gold">RA</div>
+              <div>
+                <h3>Rural Access Parts</h3>
+                <p class="muted">Spare Parts • Kumasi, Ghana</p>
+              </div>
+              <p class="dealer-text">Commercial vehicle spares, mechanical components and workshop support solutions.</p>
+              <a class="dealer-link" href="https://wa.me/233240000000" target="_blank" rel="noreferrer">WhatsApp</a>
+            </article>
+          </div>
+        </section>
+
+        <section id="submit-listing" class="submit-section">
+          <div class="container submit-grid">
+            <div class="submit-copy">
+              <p class="muted-label">Dealer listing submission</p>
+              <h2>List your stock in minutes.</h2>
+              <p>
+                Submit your vehicle or parts inventory for review. Our admin team evaluates new dealer submissions before publication, helping maintain trust, quality, and relevant inventory.
+              </p>
+              <ul class="check-list">
+                <li>Vehicle photo upload support for future deployment</li>
+                <li>GHS and NGN pricing display</li>
+                <li>Admin approval or rejection workflow</li>
+              </ul>
+            </div>
+
+            <form id="listingForm" class="listing-form">
+              <div class="form-row two-up">
+                <label>
+                  <span>Dealer name</span>
+                  <input type="text" name="dealerName" placeholder="Your business name" required />
+                </label>
+                <label>
+                  <span>Location</span>
+                  <select name="location" required>
+                    <option value="">Select country</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Nigeria">Nigeria</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="form-row two-up">
+                <label>
+                  <span>Category</span>
+                  <select name="category" required>
+                    <option value="">Select category</option>
+                    <option value="cars">Cars</option>
+                    <option value="motorcycles">Motorcycles</option>
+                    <option value="trucks">Trucks</option>
+                    <option value="buses">Buses</option>
+                    <option value="tricycles">Tricycles</option>
+                    <option value="spare parts">Spare Parts</option>
+                    <option value="heavy equipment">Heavy Equipment</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Price</span>
+                  <input type="number" name="price" placeholder="150000" required />
+                </label>
+              </div>
+
+              <label>
+                <span>Vehicle or item title</span>
+                <input type="text" name="title" placeholder="e.g. 2022 Toyota Corolla" required />
+              </label>
+
+              <div class="form-row two-up">
+                <label>
+                  <span>WhatsApp number</span>
+                  <input type="tel" name="whatsapp" placeholder="+233 24 000 0000" required />
+                </label>
+                <label>
+                  <span>Currency</span>
+                  <select name="currency" required>
+                    <option value="GHS">GHS</option>
+                    <option value="NGN">NGN</option>
+                  </select>
+                </label>
+              </div>
+
+              <label>
+                <span>Brief description</span>
+                <textarea name="description" rows="4" placeholder="Briefly describe the vehicle, condition and key specifications." required></textarea>
+              </label>
+
+              <button class="btn btn-primary submit-btn" type="submit">Submit for approval</button>
+              <p class="form-note">Demo form only — no real listings are being published.</p>
+            </form>
+          </div>
+        </section>
+
+        <section id="admin-panel" class="admin-panel">
+          <div class="container section-head">
+            <div>
+              <p class="muted-label">Admin approval</p>
+              <h2>Moderation queue</h2>
+            </div>
+          </div>
+
+          <div class="container admin-grid">
+            <div class="admin-card">
+              <h3>Pending reviews</h3>
+              <ul id="adminQueue" class="queue-list" aria-live="polite"></ul>
+            </div>
+            <div class="admin-card feature-box">
+              <h3>Approval rules</h3>
+              <ul class="check-list compact-list">
+                <li>Verify dealer identity and local business details.</li>
+                <li>Review vehicle information and pricing fairness.</li>
+                <li>Reject duplicate, misleading or incomplete submissions.</li>
+                <li>Publish only after compliance and completeness checks.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="roadmap">
+          <div class="container roadmap-grid">
+            <div>
+              <p class="muted-label">Future-ready</p>
+              <h2>Built for growth.</h2>
+            </div>
+            <div class="roadmap-cards">
+              <article>
+                <span>01</span>
+                <h3>Dealer subscriptions</h3>
+                <p>Premium visibility plans for featured dealers, business verification and campaign placement.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>Android app</h3>
+                <p>Mobile-first experience with browsing, saved listings, push notifications and WhatsApp integration.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Marketplace scale</h3>
+                <p>Expand from Ghana and Nigeria into broader West African demand with advanced filters and analytics.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-wrap">
+          <div>
+            <div class="brand footer-brand">
+              <div class="brand-mark">MH</div>
+              <div>
+                <span class="brand-name">MOTORHUB AFRICA</span>
+                <small>Marketplace</small>
+              </div>
+            </div>
+            <p>Professional automotive marketplace for Ghana and Nigeria.</p>
+          </div>
+
+          <div class="footer-meta">
+            <span>Demo content only</span>
+            <span>Premium black / gold / white</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
